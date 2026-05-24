@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Anvitha Tours — Premium South India Travel</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-logo">ANVITHA <span>TOURS</span></div>
+        <div class="loader-sub">Tours & Travels</div>
+        <div class="loader-track"><div class="loader-fill"></div></div>
+        <div class="loader-counter" id="loaderCount">0%</div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">✕</button>
+        <a href="#fleet" onclick="closeMobile()">Fleet</a>
+        <a href="#routes" onclick="closeMobile()">Routes</a>
+        <a href="#why" onclick="closeMobile()">Why Us</a>
+        <a href="#reviews" onclick="closeMobile()">Reviews</a>
+        <a href="https://wa.me/919686668015" class="btn btn-primary" style="margin-top:16px">Book Now</a>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">ANVITHA <span>TOURS</span></div>
+        <div class="nav-links">
+            <a href="#fleet">Fleet</a>
+            <a href="#routes">Routes</a>
+            <a href="#why">Why Us</a>
+            <a href="#reviews">Reviews</a>
+            <a href="https://wa.me/919686668015" class="nav-cta">
+                <iconify-icon icon="lucide:phone" width="14"></iconify-icon>9686668015
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger" onclick="openMobile()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1524492707947-2f85a64b67ad?auto=format&fit=crop&w=1920&q=80" alt="India Travel">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <iconify-icon icon="lucide:sparkles" width="14"></iconify-icon> Premium Travel Since 2013
+            </div>
+            <h1>Where Every Mile<br>Becomes a <em>Memory</em></h1>
+            <p class="hero-desc">“Because the best memories are made when the whole family travels together.”</p>
+            <div class="hero-actions">
+                <a href="#fleet" class="btn btn-primary">
+                    <iconify-icon icon="lucide:car" width="16"></iconify-icon>Explore Fleet
+                </a>
+                <a href="https://wa.me/919686668015?text=Hi! I'd like to plan a trip." class="btn btn-outline">
+                    <iconify-icon icon="lucide:message-circle" width="16"></iconify-icon>Plan My Trip
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            Scroll
+        </div>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item" data-delay="0">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item" data-delay="100">
+                <div class="stat-number">15K+</div>
+                <div class="stat-label">Happy Travellers</div>
+            </div>
+            <div class="stat-item" data-delay="200">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Tour Routes</div>
+            </div>
+            <div class="stat-item" data-delay="300">
+                <div class="stat-number">4.9</div>
+                <div class="stat-label">Google Rating</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLEET — FIXED: proper 4-card structure -->
+    <section class="fleet-section" id="fleet">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Our Vehicles</span>
+                <h2 class="section-title">Premium <em>Fleet</em></h2>
+            </div>
+            <div class="fleet-grid">
+
+                <!-- 1st — Toyota Etios -->
+                <div class="fleet-card reveal reveal-delay-1">
+                    <div class="fleet-img">
+                        <img src="Etios.png.jpeg" alt="Toyota Etios">
+                        <div class="fleet-img-overlay"></div>
+                    </div>
+                    <div class="fleet-body">
+                        <h3>Toyota Etios</h3>
+                        <div class="fleet-seats">4+1 Seater · Sedan</div>
+                        <div class="fleet-features">
+                            <span><iconify-icon icon="lucide:snowflake" width="11"></iconify-icon> AC</span>
+                            <span><iconify-icon icon="lucide:music" width="11"></iconify-icon> Music</span>
+                            <span><iconify-icon icon="lucide:luggage" width="11"></iconify-icon> Spacious Boot</span>
+                        </div>
+                        <a href="https://wa.me/919686668015?text=I want to book a Toyota Etios" class="btn btn-wa">
+                            <iconify-icon icon="logos:whatsapp-icon" width="16"></iconify-icon>Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2nd — Toyota Innova -->
+                <div class="fleet-card reveal reveal-delay-2">
+                    <div class="fleet-img">
+                        <img src="Innova.png.jpeg" alt="Toyota Innova MPV">
+                        <div class="fleet-img-overlay"></div>
+                    </div>
+                    <div class="fleet-body">
+                        <h3>Toyota Innova</h3>
+                        <div class="fleet-seats">6+1 Seater · Premium SUV</div>
+                        <div class="fleet-features">
+                            <span><iconify-icon icon="lucide:snowflake" width="11"></iconify-icon> Dual AC</span>
+                            <span><iconify-icon icon="lucide:tv" width="11"></iconify-icon> Entertainment</span>
+                            <span><iconify-icon icon="lucide:shield-check" width="11"></iconify-icon> Insurance</span>
+                            <span><iconify-icon icon="lucide:user-check" width="11"></iconify-icon> Professional Driver</span>
+                        </div>
+                        <a href="https://wa.me/919686668015?text=I want to book a Toyota Innova" class="btn btn-wa">
+                            <iconify-icon icon="logos:whatsapp-icon" width="16"></iconify-icon>Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3rd — Mahindra Xylo -->
+                <div class="fleet-card reveal reveal-delay-3">
+                    <div class="fleet-img">
+                        <img src="Xylo.png.jpeg" alt="Mahindra Xylo">
+                        <div class="fleet-img-overlay"></div>
+                    </div>
+                    <div class="fleet-body">
+                        <h3>Mahindra Xylo</h3>
+                        <div class="fleet-seats">7+1 Seater · Spacious MUV</div>
+                        <div class="fleet-features">
+                            <span><iconify-icon icon="lucide:snowflake" width="11"></iconify-icon> Powerful AC</span>
+                            <span><iconify-icon icon="lucide:luggage" width="11"></iconify-icon> Huge Boot Space</span>
+                            <span><iconify-icon icon="lucide:users" width="11"></iconify-icon> Family Friendly</span>
+                        </div>
+                        <a href="https://wa.me/919686668015?text=I want to book a Mahindra Xylo" class="btn btn-wa">
+                            <iconify-icon icon="logos:whatsapp-icon" width="16"></iconify-icon>Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4th — Tempo Traveller -->
+                <div class="fleet-card reveal reveal-delay-1">
+                    <div class="fleet-img">
+                        <img src="Tempo3.png.jpeg" alt="Tempo Traveller Van">
+                        <div class="fleet-img-overlay"></div>
+                    </div>
+                    <div class="fleet-body">
+                        <h3>Tempo Traveller</h3>
+                        <div class="fleet-seats">12–26 Seater · Group</div>
+                        <div class="fleet-features">
+                            <span><iconify-icon icon="lucide:snowflake" width="11"></iconify-icon> Powerful AC</span>
+                            <span><iconify-icon icon="lucide:luggage" width="11"></iconify-icon> Large Luggage</span>
+                            <span><iconify-icon icon="lucide:users" width="11"></iconify-icon> Group Friendly</span>
+                        </div>
+                        <a href="https://wa.me/919686668015?text=I want to book a Tempo Traveller" class="btn btn-wa">
+                            <iconify-icon icon="logos:whatsapp-icon" width="16"></iconify-icon>Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR ROUTES -->
+    <section id="routes">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Destinations</span>
+                <h2 class="section-title">Popular <em>Routes</em></h2>
+            </div>
+            <div class="routes-grid">
+                <div class="route-card reveal reveal-delay-1">
+                    <div class="route-img"><img src="mysuru palace.png.jpg" alt="Mysore Palace"></div>
+                    <div class="route-overlay"></div>
+                    <div class="route-content">
+                        <div class="route-tag">One Day Trip</div>
+                        <h3>Chitradurga → Mysore</h3>
+                        <p>Palace, Chamundi Hills, Brindavan Gardens</p>
+                    </div>
+                </div>
+                <div class="route-card reveal reveal-delay-2">
+                    <div class="route-img"><img src="coorg.png.jpg" alt="Coorg"></div>
+                    <div class="route-overlay"></div>
+                    <div class="route-content">
+                        <div class="route-tag">Weekend Getaway</div>
+                        <h3>Bangalore → Coorg</h3>
+                        <p>Coffee Plantations, Abbey Falls, Raja's Seat</p>
+                    </div>
+                </div>
+                <div class="route-card reveal reveal-delay-1">
+                    <div class="route-img"><img src="Goa.png.jpg" alt="Goa"></div>
+                    <div class="route-overlay"></div>
+                    <div class="route-content">
+                        <div class="route-tag">Hill Station</div>
+                        <h3>Bangalore → Goa</h3>
+                        <p>Waves, Sunsets, Seafood & The Ultimate Beach Escape</p>
+                    </div>
+                </div>
+                <div class="route-card reveal reveal-delay-2">
+                    <div class="route-img"><img src="Hampi.png.jpg" alt="Hampi"></div>
+                    <div class="route-overlay"></div>
+                    <div class="route-content">
+                        <div class="route-tag">Heritage Tour</div>
+                        <h3>Chitradurga → Hampi</h3>
+                        <p>Virupaksha Temple, Stone Chariot, Boulders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-section" id="why" style="background:linear-gradient(180deg,var(--bg-dark),#0d0d0d)">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Why Anvitha</span>
+                <h2 class="section-title">Travel With <em>Confidence</em></h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal reveal-delay-1">
+                    <div class="why-icon"><iconify-icon icon="lucide:shield-check"></iconify-icon></div>
+                    <h3>Fully Insured</h3>
+                    <p>All vehicles are comprehensively insured. Travel with complete peace of mind on every journey.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-2">
+                    <div class="why-icon"><iconify-icon icon="lucide:clock"></iconify-icon></div>
+                    <h3>Always On Time</h3>
+                    <p>Punctuality is our promise. Our drivers arrive early so your trip starts without a single minute wasted.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-3">
+                    <div class="why-icon"><iconify-icon icon="lucide:user-check"></iconify-icon></div>
+                    <h3>Expert Drivers</h3>
+                    <p>Professional, verified drivers with years of experience navigating South India's diverse terrain safely.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-1">
+                    <div class="why-icon"><iconify-icon icon="lucide:indian-rupee"></iconify-icon></div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges, no surprises. Get a clear quote upfront and pay only what's agreed upon.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-2">
+                    <div class="why-icon"><iconify-icon icon="lucide:headphones"></iconify-icon></div>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is available round the clock on WhatsApp and phone. Help is always just a message away.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-3">
+                    <div class="why-icon"><iconify-icon icon="lucide:sparkles"></iconify-icon></div>
+                    <h3>Well-Maintained Fleet</h3>
+                    <p>Regularly serviced, sanitized, and cleaned vehicles ensure a comfortable and hygienic ride every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial-section" id="reviews">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Travellers <em>Say</em></h2>
+            </div>
+            <div class="testimonial-card reveal" id="testimonialCard">
+                <div class="stars">★ ★ ★ ★ ★</div>
+                <blockquote id="testimonialQuote">"We booked an Innova for our Coorg trip and it was the best decision. The car was spotless, the driver was incredibly polite and knew all the best stops. Anvitha made our weekend absolutely perfect."</blockquote>
+                <div class="testimonial-author">
+                    <img src="https://picsum.photos/seed/traveller1/96/96.jpg" alt="Reviewer" class="testimonial-avatar" id="testimonialAvatar">
+                    <div class="testimonial-info">
+                        <h4 id="testimonialName">Priya Sharma</h4>
+                        <p id="testimonialRole">Bangalore → Coorg Trip</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:28px" class="reveal">
+                <button onclick="nextTestimonial()" class="btn btn-outline" style="padding:10px 24px;font-size:.7rem">
+                    <iconify-icon icon="lucide:refresh-cw" width="14"></iconify-icon>Read More Reviews
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container reveal">
+            <span class="section-label">Ready to Explore?</span>
+            <h2>Your Journey <em>Starts Here</em></h2>
+            <p>Tell us your destination and dates. We'll handle the rest — vehicle, driver, route, and memories.</p>
+            <div class="cta-actions">
+                <a href="https://wa.me/919686668015?text=Hi! I'd like to plan a trip. Please share your best packages." class="btn btn-primary">
+                    <iconify-icon icon="logos:whatsapp-icon" width="18"></iconify-icon>Chat on WhatsApp
+                </a>
+                <a href="tel:9686668015" class="btn btn-outline">
+                    <iconify-icon icon="lucide:phone" width="16"></iconify-icon>Call 9686668015
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>ANVITHA <span>TOURS</span></h3>
+                <p>Premium tours and travels across South India. Trusted by thousands of travellers since 2013.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#fleet">Our Fleet</a>
+                <a href="#routes">Popular Routes</a>
+                <a href="#why">Why Choose Us</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <div class="footer-col">
+                <h4>Top Routes</h4>
+                <a href="https://wa.me/919686668015?text=I want to book Bangalore to Mysore">Bangalore → Mysore</a>
+                <a href="https://wa.me/919686668015?text=I want to book Bangalore to Coorg">Bangalore → Coorg</a>
+                <a href="https://wa.me/919686668015?text=I want to book Bangalore to Ooty">Bangalore → Ooty</a>
+                <a href="https://wa.me/919686668015?text=I want to book Bangalore to Hampi">Bangalore → Hampi</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact">
+                    <iconify-icon icon="lucide:phone"></iconify-icon> +91 9686668015
+                </div>
+                <div class="footer-contact">
+                    <iconify-icon icon="logos:whatsapp-icon"></iconify-icon> WhatsApp Available
+                </div>
+                <div class="footer-contact">
+                    <iconify-icon icon="lucide:map-pin"></iconify-icon> Chitradurga - 577501
+                </div>
+            </div>
+        <div class="footer-bottom">
+    <span>© 2026 Anvitha Tours & Travels. All rights reserved.</span>
+
+    <span class="developer-credit" onclick="openDevPopup()">
+    Designed & Developed by Manoj Kumar
+</span>
+
+
+</footer>
+    <span>Crafted with <span style="color:var(--gold)">♥</span> in India</span>
+</div>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/919686668015?text=Hi! I'm interested in booking a vehicle." class="wa-float" id="waFloat" title="Chat on WhatsApp">
+        <iconify-icon icon="logos:whatsapp-icon" width="28"></iconify-icon>
+    </a>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <iconify-icon icon="lucide:arrow-up" width="20"></iconify-icon>
+    </button>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+        <iconify-icon icon="lucide:message-circle"></iconify-icon>
+        <span>Need help? Chat with us on WhatsApp!</span>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
